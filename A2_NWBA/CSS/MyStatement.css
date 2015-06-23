@@ -1,0 +1,56 @@
+﻿#statement-area
+{
+    margin: 5px 15px 15px 15px;
+    font-size: 75%;
+    height: 500px;
+}
+
+#transaction-table
+{
+    width: 100%;
+    border: 2px solid black;
+}
+
+#transaction-table th
+{
+    background-color: black;
+    color: white;
+    font-size: 120%;
+}
+#transaction-table td
+{
+    font-size: 100%;
+    border: 1px solid black;
+    padding-left: 3px;
+}
+
+#transaction-table tr
+{
+    line-height: 35px;
+}
+
+#detail-table
+{
+    width: 60%;
+    border: solid 1px black;
+}
+
+#detail-table td
+{
+    line-height: 22px;
+    border: solid 1px black;
+    padding: 0 0 0 5px;
+}
+
+.no-results
+{
+    font-style:italic;
+    font-size: 110%;
+    margin: 20px 0 0 0;
+}
+
+#list-area
+{
+    margin-top: 25px;
+}
+

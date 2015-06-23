@@ -1,0 +1,76 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="NWBA.master.cs" Inherits="A2_NWBA.MasterPages.NWBA" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link type="text/css" rel="stylesheet" href="/CSS/Reset.css" />
+    <link type="text/css" rel="stylesheet" href="/CSS/Global.css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="top-strip">
+            <div id="inner-top-wrap">
+                <div style="float:left;">Hi <asp:Literal ID="UserNameLtr" runat="server" />! Welcome to NWBA Online Banking</div>
+                <div style="float: right;"><asp:LinkButton ID="LogOutLb" runat="server" Text="Sign Off" OnClick="LogOutLb_Click" CausesValidation="false" /></div>
+            </div>
+        </div>
+        <div id="site-wrap">
+            <header>
+                <div id="header-logo">
+                    <a href="/Accounts/Action/ATM"><img style="margin-top:22px;" src="/Images/HeadLogoTop.png" /></a>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="/Customer/Profile">My Profile</a></li>
+                        <li><a href="/Accounts/Statement/View">My Statement</a></li>
+                        <li><a href="/Accounts/Action/ATM">Deposit/Withdraw</a></li>
+                        <li><a href="/BPAY/Edit/New">Create/View BPAYs</a></li>
+                    </ul>
+                </nav>
+                <div id="nav-divider"></div>
+            </header>
+            <div id="main-content">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    <!--Site Body of Content Placeholder-->       
+                </asp:ContentPlaceHolder>
+            </div>
+            <!--<div class="clearall"></div>-->
+            <footer>
+                <div id="footer-img">
+                    <img src="/Images/NWMAFooter.png" />
+                </div>
+                <div class="footer-list">
+                    <ul>
+                        <li><strong>Online Banking</strong></li>
+                        <li><a href="/Customer/Profile">My Profile</a></li>
+                        <li><a href="/Accounts/Statement/View">My Statement</a></li>
+                        <li><a href="/Accounts/Action/ATM">Deposit/Withdraw</a></li>
+                        <li><a href="/BPAY/Edit/New">BPAY Payments</a></li>
+                    </ul>
+                </div>
+                <div class="footer-list">
+                    <ul>
+                        <li><strong>NWBA</strong></li>
+                        <li><a>Branch Locator</a></li>
+                        <li><a>ATM Locator</a></li>
+                        <li><a>Contact NWBA</a></li>
+                    </ul>
+                </div>
+                <div class="footer-list">
+                    <ul>
+                        <li><strong>Services</strong></li>
+                        <li><a>Personal Banking</a></li>
+                        <li><a>Business Banking</a></li>
+                        <li><a>Credit Solutions</a></li>
+                        <li><a>Home Loans</a></li>
+                    </ul>
+                </div>
+                <div class="clearall"></div>
+            </footer>
+        </div>
+    </form>
+</body>
+</html>

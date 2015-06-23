@@ -1,0 +1,49 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="NWBA.Admin.master.cs" Inherits="A2_NWBA.MasterPages.NWBA_Admin" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link type="text/css" rel="stylesheet" href="/CSS/Reset.css" />
+    <link type="text/css" rel="stylesheet" href="/CSS/Global.css" />
+    <link type="text/css" rel="stylesheet" href="/CSS/AdminTheme.css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="top-strip">
+            <div id="inner-top-wrap">
+                <div style="float:left;">Hi <asp:Literal ID="UserNameLtr" runat="server" />! Welcome to NWBA Admin Section</div>
+                <div style="float: right;"><asp:LinkButton ID="LogOutLb" runat="server" Text="Sign Off" OnClick="LogOutLb_Click" CausesValidation="false" /></div>
+            </div>
+        </div>
+        <div id="site-wrap">
+            <header>
+                <div id="header-logo">
+                    <a href="/Admin"><img style="margin-top:22px;" src="/Images/AdminHeadLogoTop.png" /></a>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="/Admin">Admin Home</a></li>
+                        <li><a href="Admin/BPAY/ViewAll">View/Cancel BPAYs</a></li>
+                    </ul>
+                </nav>
+                <div id="nav-divider"></div>
+            </header>
+            <div id="main-content">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    <!--Site Body of Content Placeholder-->       
+                </asp:ContentPlaceHolder>
+            </div>
+            <!--<div class="clearall"></div>-->
+            <footer>
+                <div id="footer-img">
+                    <img src="/Images/AdminNWMAFooter.png" />
+                </div>
+                <div class="clearall"></div>
+            </footer>
+        </div>
+    </form>
+</body>
+</html>

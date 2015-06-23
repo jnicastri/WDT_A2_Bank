@@ -1,0 +1,117 @@
+﻿#BPAY-view-area,
+#BPAY-detail-area{
+    height: 500px;
+    padding: 10px 30px 10px 30px;
+    margin: 5px 15px 15px 15px;
+    font-size: 75%;
+}
+
+.ajaxCalendar .ajax__calendar_container   {
+    background-color: #eeeded;
+    border:solid 1px #000000;
+}
+
+.ajaxCalendar .ajax__calendar_header  {
+    background-color: #ffffff;
+    margin-bottom: 4px;
+    height: 20px;
+    line-height: 20px;
+}
+
+.ajaxCalendar .ajax__calendar_next,
+.ajaxCalendar .ajax__calendar_prev    {
+    color: #004080;
+    padding-top: 3px;
+}
+
+.ajaxCalendar .ajax__calendar_title{
+    color: #004080;
+    height: 20px;
+    line-height: 20px;
+}
+
+.ajaxCalendar .ajax__calendar_body    {
+    background-color: #ffffff;
+    border: solid 1px #000000;
+}
+
+.ajaxCalendar .ajax__calendar_dayname {
+    text-align:center;
+    font-weight:bold;
+    margin-bottom: 4px;
+    margin-top: 2px;
+    color: #004080;
+}
+
+.ajaxCalendar .ajax__calendar_day {
+    color: #004080;
+    text-align:center;
+    height: 20px;
+    line-height: 20px;
+     
+}
+
+.ajaxCalendar .ajax__calendar_hover .ajax__calendar_day,
+.ajaxCalendar .ajax__calendar_hover .ajax__calendar_month,
+.ajaxCalendar .ajax__calendar_hover .ajax__calendar_year,
+.ajaxCalendar .ajax__calendar_active  {
+    color: #000000;
+    font-weight: bold;
+    background-color: #aaa8a8;
+}
+
+
+.ajaxCalendar .ajax__calendar_month {
+    color: #004080;
+    text-align:center;
+     
+}
+
+.ajaxCalendar .ajax__calendar_today   {
+    font-weight:bold;
+    height: 20px;
+    line-height: 20px;
+}
+
+.ajaxCalendar .ajax__calendar_other,
+.ajaxCalendar .ajax__calendar_hover .ajax__calendar_today,
+.ajaxCalendar .ajax__calendar_hover .ajax__calendar_title {
+    color: #7e7c7c;
+}
+
+.no-results
+{
+    font-style:italic;
+    font-size: 110%;
+    margin: 20px 0 0 0;
+}
+
+#BPAY-item-table
+{
+    width: 100%;
+    border: 2px solid black;
+}
+
+#BPAY-item-table th
+{
+    background-color: black;
+    color: white;
+    font-size: 120%;
+}
+#BPAY-item-table td
+{
+    font-size: 100%;
+    border: 1px solid black;
+    padding-left: 3px;
+}
+
+#BPAY-item-table tr
+{
+    line-height: 35px;
+}
+
+#message-area
+{
+   padding: 10px 30px 10px 30px;
+    margin: 5px 15px 15px 15px; 
+}

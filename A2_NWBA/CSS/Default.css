@@ -1,0 +1,20 @@
+﻿#sub-nav-area{
+    float: left;
+    margin: 15px; 
+}
+
+.form-area{
+    float:left;
+    margin: 15px;
+    font-size: 75%;
+    
+}
+
+#button-row{
+    padding: 25px 0 25px 0;
+}
+
+#ATM-area
+{
+    height: 500px;
+}
